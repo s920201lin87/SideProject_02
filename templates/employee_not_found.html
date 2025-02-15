@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>員工薪資系統 - 找不到員工</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <div class="login-container">
+        <h1>找不到員工</h1>
+        <p>系統中無此員工編號：{{ emp_id }}</p>
+        <p><a href="/">回首頁</a> | <a href="/check_salary">重新查詢</a></p>
+    </div>
+
+</body>
+
+</html>

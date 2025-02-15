@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>員工薪資系統 - 結果</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <div class="login-container">
+        <h1>查詢結果</h1>
+        <p>員工編號：{{ info.employee_id }}</p>
+        <p>姓名：{{ info.name }}</p>
+        <p>Email：{{ info.email }}</p>
+        <p>員工類型：{{ emp_type }}</p>
+        <hr>
+        <p><strong>本月薪資：{{ salary }} 元</strong></p>
+        <p><a href="/">回首頁</a> | <a href="/check_salary">再次查詢</a></p>
+    </div>
+
+</body>
+</html>
